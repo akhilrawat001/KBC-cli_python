@@ -59,13 +59,13 @@ for index,question in enumerate(questionsDict,start = 1):
     exit()
   else:
     userAnswer = int(userAnswer)
-  if userAnswer == "5050":
     if userAnswer == 'quit':
       print('You are a Quitter!')
       print('You can take '  + str(int(score)) +  ' Rupees home!')
       exit()
     else:
       userAnswer = int(userAnswer)
+  if userAnswer == 5050:
     if helpLines > 0:
       helpLines = 0
       newOptions = helpline(optionsDict[question],answersDict[question])
